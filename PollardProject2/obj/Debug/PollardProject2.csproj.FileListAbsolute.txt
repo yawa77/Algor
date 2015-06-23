@@ -1,0 +1,9 @@
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\bin\Debug\PollardProject2.exe.config
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\bin\Debug\PollardProject2.exe
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\bin\Debug\PollardProject2.pdb
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\obj\Debug\PollardProject2.csprojResolveAssemblyReference.cache
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\obj\Debug\PollardProject2.Form1.resources
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\obj\Debug\PollardProject2.Properties.Resources.resources
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\obj\Debug\PollardProject2.csproj.GenerateResource.Cache
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\obj\Debug\PollardProject2.exe
+c:\users\david\documents\visual studio 2013\Projects\PollardProject2\obj\Debug\PollardProject2.pdb
