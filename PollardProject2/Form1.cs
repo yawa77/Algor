@@ -26,5 +26,11 @@ namespace PollardProject2
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtLetters.Text = "";
+            
+        }
     }
 }

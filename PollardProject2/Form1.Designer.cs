@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLetters = new System.Windows.Forms.TextBox();
             this.lblStates = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbStates = new System.Windows.Forms.ComboBox();
             this.cmbPost0 = new System.Windows.Forms.ComboBox();
             this.lblPost0 = new System.Windows.Forms.Label();
             this.lblPost1 = new System.Windows.Forms.Label();
@@ -58,8 +59,8 @@
             this.btnCompute = new System.Windows.Forms.Button();
             this.lblResults = new System.Windows.Forms.Label();
             this.lblOutput = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -74,12 +75,12 @@
             this.label1.Text = "Letters";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtLetters
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtLetters.Location = new System.Drawing.Point(82, 26);
+            this.txtLetters.Name = "txtLetters";
+            this.txtLetters.Size = new System.Drawing.Size(128, 20);
+            this.txtLetters.TabIndex = 1;
             // 
             // lblStates
             // 
@@ -92,9 +93,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbStates);
             this.groupBox1.Controls.Add(this.lblStates);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtLetters);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(42, 9);
             this.groupBox1.Name = "groupBox1";
@@ -103,10 +104,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Letters and States";
             // 
+            // cmbStates
+            // 
+            this.cmbStates.FormattingEnabled = true;
+            this.cmbStates.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbStates.Location = new System.Drawing.Point(497, 26);
+            this.cmbStates.Name = "cmbStates";
+            this.cmbStates.Size = new System.Drawing.Size(96, 21);
+            this.cmbStates.TabIndex = 3;
+            // 
             // cmbPost0
             // 
             this.cmbPost0.FormattingEnabled = true;
             this.cmbPost0.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -141,6 +162,7 @@
             // 
             this.cmbPost1.FormattingEnabled = true;
             this.cmbPost1.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -157,6 +179,7 @@
             // 
             this.cmbPost2.FormattingEnabled = true;
             this.cmbPost2.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -191,6 +214,7 @@
             // 
             this.cmbPost3.FormattingEnabled = true;
             this.cmbPost3.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -216,6 +240,7 @@
             // 
             this.cmbPost4.FormattingEnabled = true;
             this.cmbPost4.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -241,6 +266,7 @@
             // 
             this.cmbPost5.FormattingEnabled = true;
             this.cmbPost5.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -266,6 +292,7 @@
             // 
             this.cmbPost6.FormattingEnabled = true;
             this.cmbPost6.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -291,6 +318,7 @@
             // 
             this.cmbPost7.FormattingEnabled = true;
             this.cmbPost7.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -316,6 +344,7 @@
             // 
             this.cmbPost8.FormattingEnabled = true;
             this.cmbPost8.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -341,6 +370,7 @@
             // 
             this.cmbPost9.FormattingEnabled = true;
             this.cmbPost9.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -366,6 +396,7 @@
             // 
             this.cmbPost10.FormattingEnabled = true;
             this.cmbPost10.Items.AddRange(new object[] {
+            "",
             "A",
             "B",
             "C",
@@ -435,25 +466,6 @@
             this.lblOutput.Size = new System.Drawing.Size(0, 13);
             this.lblOutput.TabIndex = 30;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.comboBox1.Location = new System.Drawing.Point(497, 26);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(96, 21);
-            this.comboBox1.TabIndex = 3;
-            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(643, 717);
@@ -464,11 +476,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 717);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 47);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Clear Input";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 776);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnCompute);
             this.Controls.Add(this.lblOutput);
@@ -489,7 +512,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLetters;
         private System.Windows.Forms.Label lblStates;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbPost0;
@@ -518,8 +541,9 @@
         private System.Windows.Forms.Button btnCompute;
         private System.Windows.Forms.Label lblResults;
         private System.Windows.Forms.Label lblOutput;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbStates;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button button1;
     }
 }
 
